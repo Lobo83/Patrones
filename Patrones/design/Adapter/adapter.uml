@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yAqLMLTFEeawC4VSDsiuhQ" name="Adapter">
+  <packagedElement xmi:type="uml:Package" xmi:id="_KE9RsLTGEeawC4VSDsiuhQ" name="org.lobo.patrones.adapter.interface">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_EMvhILTGEeawC4VSDsiuhQ" name="Adapter">
+      <ownedOperation xmi:id="_FsMhsLTGEeawC4VSDsiuhQ" name="adapta"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VyVe0LTGEeawC4VSDsiuhQ" name="AdapterImpl">
+      <interfaceRealization xmi:id="_ZTTrMLTGEeawC4VSDsiuhQ" client="_VyVe0LTGEeawC4VSDsiuhQ" supplier="_EMvhILTGEeawC4VSDsiuhQ" contract="_EMvhILTGEeawC4VSDsiuhQ"/>
+      <ownedOperation xmi:id="_Z6IaoLTGEeawC4VSDsiuhQ" name="adapta">
+        <ownedParameter xmi:id="_brfDgLTGEeawC4VSDsiuhQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CecW0LTHEeawC4VSDsiuhQ" memberEnd="_CecW0bTHEeawC4VSDsiuhQ _CecW1LTHEeawC4VSDsiuhQ" navigableOwnedEnd="_CecW0bTHEeawC4VSDsiuhQ _CecW1LTHEeawC4VSDsiuhQ">
+      <ownedEnd xmi:id="_CecW0bTHEeawC4VSDsiuhQ" name="adapters" type="_EMvhILTGEeawC4VSDsiuhQ" association="_CecW0LTHEeawC4VSDsiuhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CecW0rTHEeawC4VSDsiuhQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CecW07THEeawC4VSDsiuhQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_CecW1LTHEeawC4VSDsiuhQ" name="clients" type="_5VKeILTGEeawC4VSDsiuhQ" association="_CecW0LTHEeawC4VSDsiuhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CecW1bTHEeawC4VSDsiuhQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CecW1rTHEeawC4VSDsiuhQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Xf6lgLTHEeawC4VSDsiuhQ" memberEnd="_Xf6lgbTHEeawC4VSDsiuhQ _Xf6lhLTHEeawC4VSDsiuhQ" navigableOwnedEnd="_Xf6lgbTHEeawC4VSDsiuhQ _Xf6lhLTHEeawC4VSDsiuhQ">
+      <ownedEnd xmi:id="_Xf6lgbTHEeawC4VSDsiuhQ" name="adapterImpls" type="_VyVe0LTGEeawC4VSDsiuhQ" association="_Xf6lgLTHEeawC4VSDsiuhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xf6lgrTHEeawC4VSDsiuhQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xf6lg7THEeawC4VSDsiuhQ" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Xf6lhLTHEeawC4VSDsiuhQ" name="adaptedClasss" type="_laXjoLTGEeawC4VSDsiuhQ" association="_Xf6lgLTHEeawC4VSDsiuhQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xf6lhbTHEeawC4VSDsiuhQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xf6lhrTHEeawC4VSDsiuhQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pjy3ILTGEeawC4VSDsiuhQ" name="org.lobo.patrones.adapter.functionality">
+    <packagedElement xmi:type="uml:Class" xmi:id="_laXjoLTGEeawC4VSDsiuhQ" name="AdaptedClass">
+      <ownedOperation xmi:id="_OJoyoLTHEeawC4VSDsiuhQ" name="realiza"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_2Y4TMLTGEeawC4VSDsiuhQ" name="org.lobo.patrones.adapter.client">
+    <packagedElement xmi:type="uml:Class" xmi:id="_5VKeILTGEeawC4VSDsiuhQ" name="Client"/>
+  </packagedElement>
+</uml:Model>

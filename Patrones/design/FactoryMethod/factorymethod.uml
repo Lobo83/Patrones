@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_s0GAgLSVEeaQL-QbXqYrTw" name="FactoryMethod">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Bgwc0LSWEeaQL-QbXqYrTw" name="org.lobo.patrones.factorymethod.creator">
+    <packagedElement xmi:type="uml:Class" xmi:id="_4f9KsLSVEeaQL-QbXqYrTw" name="AbstractCreator" isAbstract="true">
+      <ownedOperation xmi:id="_gHECULSXEeawC4VSDsiuhQ" name="CreateProduct" isAbstract="true">
+        <ownedParameter xmi:id="_iItJ8LSXEeawC4VSDsiuhQ" type="_VRCJYLSWEeaQL-QbXqYrTw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_40Hc0LSVEeaQL-QbXqYrTw" name="ConcreteCreator">
+      <generalization xmi:id="_OanEILSWEeaQL-QbXqYrTw" general="_4f9KsLSVEeaQL-QbXqYrTw"/>
+      <ownedOperation xmi:id="_vUf10LSXEeawC4VSDsiuhQ" name="CreateProduct">
+        <eAnnotations xmi:id="_2oExILSXEeawC4VSDsiuhQ"/>
+        <ownedParameter xmi:id="_xTQBgLSXEeawC4VSDsiuhQ" type="_VRCJYLSWEeaQL-QbXqYrTw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RLdbILSWEeaQL-QbXqYrTw" name="org.lobo.patrones.factorymethod.product">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_VRCJYLSWEeaQL-QbXqYrTw" name="Product"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9V2GILSWEeaQL-QbXqYrTw" name="ConcreteProduct">
+      <interfaceRealization xmi:id="_AdnvYLSXEeaQL-QbXqYrTw" client="_9V2GILSWEeaQL-QbXqYrTw" supplier="_VRCJYLSWEeaQL-QbXqYrTw" contract="_VRCJYLSWEeaQL-QbXqYrTw"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
