@@ -2,8 +2,6 @@
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_lrTY4LSVEeaQL-QbXqYrTw" selectedViews="_mDTCILSVEeaQL-QbXqYrTw _mDpAYLSVEeaQL-QbXqYrTw _mDt44LSVEeaQL-QbXqYrTw _mD7UQLSVEeaQL-QbXqYrTw _mEBa4LSVEeaQL-QbXqYrTw" version="11.0.0.201604141600">
   <semanticResources>design/FactoryMethod/factorymethod.uml</semanticResources>
   <semanticResources>factorymethod.uml</semanticResources>
-  <semanticResources>../Adapter/adapter.uml</semanticResources>
-  <semanticResources>../../decorator.uml</semanticResources>
   <semanticResources>pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml</semanticResources>
   <semanticResources>pathmap://UML_PROFILES/Standard.profile.uml</semanticResources>
   <semanticResources>http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard</semanticResources>
@@ -14,6 +12,8 @@
   <semanticResources>http://www.eclipse.org/uml2/5.0.0/UML</semanticResources>
   <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
   <semanticResources>pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml</semanticResources>
+  <semanticResources>../../adapter.uml</semanticResources>
+  <semanticResources>../../decorator.uml</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_mDTCILSVEeaQL-QbXqYrTw">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Reused']"/>
   </ownedViews>
