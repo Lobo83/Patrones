@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_eAOYgL-WEeazsut72t_bJw" name="FlyWeight">
+  <packagedElement xmi:type="uml:Package" xmi:id="_j82vAL-WEeazsut72t_bJw" name="org.lobo.patrones.flyweight.factory">
+    <packageImport xmi:id="_21mWoL-WEeazsut72t_bJw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_3cG9AL-WEeazsut72t_bJw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_niAQwL-WEeazsut72t_bJw" name="FlyWeightFactory">
+      <ownedOperation xmi:id="_UF62EL-XEeazsut72t_bJw" name="getFlyWeight">
+        <ownedParameter xmi:id="_UtyHUL-XEeazsut72t_bJw" name="flyWeightId"/>
+        <ownedParameter xmi:id="_X7NFkL-XEeazsut72t_bJw" type="_sfhToL-WEeazsut72t_bJw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sfhToL-WEeazsut72t_bJw" name="FlyWeight">
+      <packageImport xmi:id="_7jzLIL-WEeazsut72t_bJw">
+        <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+      </packageImport>
+      <ownedOperation xmi:id="_u8BLQL-WEeazsut72t_bJw" name="operacion">
+        <ownedParameter xmi:id="_wS0mIL-WEeazsut72t_bJw" name="estadoExtrinseco"/>
+        <ownedParameter xmi:id="_z5a5YL-WEeazsut72t_bJw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qfSEwL-XEeazsut72t_bJw" name="flyWeightFactorysToFlyWeights" memberEnd="_qfTS4L-XEeazsut72t_bJw _qfXkUL-XEeazsut72t_bJw" navigableOwnedEnd="_qfXkUL-XEeazsut72t_bJw">
+      <ownedEnd xmi:id="_qfTS4L-XEeazsut72t_bJw" name="flyWeightFactorys" type="_niAQwL-WEeazsut72t_bJw" association="_qfSEwL-XEeazsut72t_bJw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qfVIEL-XEeazsut72t_bJw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qfWWML-XEeazsut72t_bJw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_qfXkUL-XEeazsut72t_bJw" name="flyWeights" type="_sfhToL-WEeazsut72t_bJw" aggregation="shared" association="_qfSEwL-XEeazsut72t_bJw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qfYycL-XEeazsut72t_bJw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qfZZgL-XEeazsut72t_bJw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_2pvPcL-XEeazsut72t_bJw" name="org.lobo.patrones.flyweight.cliente">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xzU6IL-XEeazsut72t_bJw" name="ClienteFlyWeight"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_98zNYL-XEeazsut72t_bJw" name="clienteFlyWeightsToFlyWeights" memberEnd="_98z0cL-XEeazsut72t_bJw _9823wL-XEeazsut72t_bJw" navigableOwnedEnd="_9823wL-XEeazsut72t_bJw">
+      <ownedEnd xmi:id="_98z0cL-XEeazsut72t_bJw" name="clienteFlyWeights" type="_xzU6IL-XEeazsut72t_bJw" association="_98zNYL-XEeazsut72t_bJw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_981poL-XEeazsut72t_bJw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_982QsL-XEeazsut72t_bJw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_9823wL-XEeazsut72t_bJw" name="flyWeights" type="_sfhToL-WEeazsut72t_bJw" aggregation="shared" association="_98zNYL-XEeazsut72t_bJw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_983e0L-XEeazsut72t_bJw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_984F4L-XEeazsut72t_bJw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_C_SP0L-YEeazsut72t_bJw" memberEnd="_C_UsEL-YEeazsut72t_bJw _C_bZwL-YEeazsut72t_bJw" navigableOwnedEnd="_C_bZwL-YEeazsut72t_bJw">
+      <ownedEnd xmi:id="_C_UsEL-YEeazsut72t_bJw" name="clienteFlyWeights" type="_xzU6IL-XEeazsut72t_bJw" association="_C_SP0L-YEeazsut72t_bJw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C_YWcL-YEeazsut72t_bJw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_aLoL-YEeazsut72t_bJw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_C_bZwL-YEeazsut72t_bJw" name="flyWeightFactorys" type="_niAQwL-WEeazsut72t_bJw" association="_C_SP0L-YEeazsut72t_bJw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C_d2AL-YEeazsut72t_bJw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C_fEIL-YEeazsut72t_bJw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
