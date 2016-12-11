@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qNFmsL-FEeaym46CNZ9OSQ" name="decorator">
+  <packageImport xmi:id="_yLzUQL-GEeaym46CNZ9OSQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_96u2AL-FEeaym46CNZ9OSQ" name="org.lobo.patrones.decorator">
+    <packageImport xmi:id="_weTQoL-GEeaym46CNZ9OSQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_I0HIcL-IEeaym46CNZ9OSQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JCl7QL-GEeaym46CNZ9OSQ" name="ComponenteAbstracto" isAbstract="true">
+      <ownedOperation xmi:id="_N1Px8L-GEeaym46CNZ9OSQ" name="operacion" isAbstract="true">
+        <ownedParameter xmi:id="_QTFGUL-GEeaym46CNZ9OSQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6SuYEL-GEeaym46CNZ9OSQ" name="ComponenteDecorator" isAbstract="true">
+      <generalization xmi:id="_VM7NUL-KEeaym46CNZ9OSQ" general="_JCl7QL-GEeaym46CNZ9OSQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_MFVeEL-HEeaym46CNZ9OSQ" name="org.lobo.patrones.decorator.impl">
+    <packagedElement xmi:type="uml:Class" xmi:id="_WHOPML-GEeaym46CNZ9OSQ" name="ComponenteConcreto">
+      <packageImport xmi:id="_JtjR4L-IEeaym46CNZ9OSQ">
+        <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+      </packageImport>
+      <generalization xmi:id="_eY1jQL-KEeaym46CNZ9OSQ" general="_JCl7QL-GEeaym46CNZ9OSQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UZ8_oL-HEeaym46CNZ9OSQ" name="DecoratorConcreto">
+      <generalization xmi:id="_du-G4L-KEeaym46CNZ9OSQ" general="_6SuYEL-GEeaym46CNZ9OSQ"/>
+      <ownedOperation xmi:id="_cITLYL-HEeaym46CNZ9OSQ" name="operacionAdicional">
+        <ownedParameter xmi:id="_d5n_EL-HEeaym46CNZ9OSQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
